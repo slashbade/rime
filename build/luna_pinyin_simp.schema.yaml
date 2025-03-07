@@ -8,8 +8,8 @@ __build_info:
     key_bindings.custom: 0
     luna_pinyin.custom: 0
     luna_pinyin.schema: 1741306816
-    luna_pinyin_simp.custom: 1741307858
-    luna_pinyin_simp.schema: 1741306729
+    luna_pinyin_simp.custom: 1741334795
+    luna_pinyin_simp.schema: 1741334797
     pinyin: 1675504396
     pinyin.custom: 0
     punctuation: 1649520780
@@ -413,8 +413,12 @@ switches:
     states: ["中文", "西文"]
   - name: full_shape
     states: ["半角", "全角"]
-  - name: simplification
+  - name: zh_simp
+    reset: 1
     states: ["漢字", "汉字"]
+  - name: simplification
+    reset: 0
+    states: ["汉字"]
   - name: ascii_punct
     states: ["。，", "．，"]
 translator:
