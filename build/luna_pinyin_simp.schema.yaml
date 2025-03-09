@@ -8,7 +8,7 @@ __build_info:
     key_bindings.custom: 0
     luna_pinyin.custom: 0
     luna_pinyin.schema: 1741306816
-    luna_pinyin_simp.custom: 1741334795
+    luna_pinyin_simp.custom: 1741514811
     luna_pinyin_simp.schema: 1741334797
     pinyin: 1675504396
     pinyin.custom: 0
@@ -53,40 +53,9 @@ engine:
     - script_translator
 key_binder:
   bindings:
-    - {accept: "Control+p", send: Up, when: composing}
-    - {accept: "Control+n", send: Down, when: composing}
-    - {accept: "Control+b", send: Left, when: composing}
-    - {accept: "Control+f", send: Right, when: composing}
-    - {accept: "Control+a", send: Home, when: composing}
-    - {accept: "Control+e", send: End, when: composing}
-    - {accept: "Control+d", send: Delete, when: composing}
-    - {accept: "Control+k", send: "Shift+Delete", when: composing}
-    - {accept: "Control+h", send: BackSpace, when: composing}
-    - {accept: "Control+g", send: Escape, when: composing}
-    - {accept: "Control+bracketleft", send: Escape, when: composing}
-    - {accept: "Control+y", send: Page_Up, when: composing}
-    - {accept: "Alt+v", send: Page_Up, when: composing}
-    - {accept: "Control+v", send: Page_Down, when: composing}
-    - {accept: ISO_Left_Tab, send: "Shift+Left", when: composing}
-    - {accept: "Shift+Tab", send: "Shift+Left", when: composing}
-    - {accept: Tab, send: "Shift+Right", when: composing}
-    - {accept: minus, send: Page_Up, when: has_menu}
-    - {accept: equal, send: Page_Down, when: has_menu}
-    - {accept: comma, send: Page_Up, when: paging}
-    - {accept: period, send: Page_Down, when: has_menu}
-    - {accept: "Control+Shift+1", select: .next, when: always}
-    - {accept: "Control+Shift+2", toggle: ascii_mode, when: always}
-    - {accept: "Control+Shift+3", toggle: full_shape, when: always}
-    - {accept: "Control+Shift+4", toggle: simplification, when: always}
-    - {accept: "Control+Shift+5", toggle: extended_charset, when: always}
-    - {accept: "Control+Shift+exclam", select: .next, when: always}
-    - {accept: "Control+Shift+at", toggle: ascii_mode, when: always}
-    - {accept: "Control+Shift+numbersign", toggle: full_shape, when: always}
-    - {accept: "Control+Shift+dollar", toggle: simplification, when: always}
-    - {accept: "Control+Shift+percent", toggle: extended_charset, when: always}
-    - {accept: "Control+Shift+4", toggle: zh_simp, when: always}
-    - {accept: "Control+Shift+dollar", toggle: zh_simp, when: always}
-  import_preset: default
+    accept: enter
+    send: space
+    when: always
 menu:
   page_size: 5
 punctuator:
@@ -389,6 +358,8 @@ schema:
   name: "朙月拼音·简化字"
   schema_id: luna_pinyin_simp
   version: 0.22
+schema_list:
+  - schema: luna_pinyin_simp
 simplifier:
   option_name: zh_simp
 speller:
