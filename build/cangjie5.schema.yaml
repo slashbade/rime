@@ -3,13 +3,13 @@ __build_info:
   timestamps:
     cangjie5.custom: 0
     cangjie5.schema: 1614091814
-    default: 1649520780
+    default: 1742872444
     default.custom: 0
     key_bindings: 1649520780
     key_bindings.custom: 0
     punctuation: 1649520780
     punctuation.custom: 0
-    symbols: 1649520780
+    symbols: 1742873136
     symbols.custom: 0
 abc_segmentor:
   extra_tags:
